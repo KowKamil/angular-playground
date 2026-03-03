@@ -1,0 +1,17 @@
+# Ignore configs Prettier can't parse by default
+.editorconfig
+.gitignore
+
+# Binary assets
+*.ico
+*.png
+*.jpg
+*.jpeg
+*.webp
+*.svg
+
+# Build output
+dist
+coverage
+.angular
+node_modules
