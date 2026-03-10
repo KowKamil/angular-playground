@@ -10,14 +10,32 @@ div {
 .primary {
     background-color: @button-bg-color;
     color: if(luma(@button-bg-color) > 50%, @button-text-color-light, @button-text-color-dark);
+    &:hover{
+        background-color: lighten(@button-bg-color, 10%);
+    }
+    &:active{
+        background-color: darken(@button-bg-color, 10%);
+    }
 }
 
 .primary-light {
     background-color: @button-bg-color-light;
     color: if(luma(@button-bg-color-light) > 50%, @button-text-color-light, @button-text-color-dark);
+    &:hover{
+        background-color: lighten(@button-bg-color-light, 10%);
+    }
+    &:active{
+        background-color: darken(@button-bg-color-light, 10%);
+    }
 }
 
 .primary-dark {
     background-color: @button-bg-color-dark;
     color: if(luma(@button-bg-color-dark) > 50%, @button-text-color-light, @button-text-color-dark);
+    &:hover{
+        background-color: lighten(@button-bg-color-dark, 10%);
+    }
+    &:active{
+        background-color: darken(@button-bg-color-dark, 10%);
+    }
 }
