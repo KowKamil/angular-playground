@@ -18,6 +18,8 @@
 
 @button-padding: 10px 20px;
 @button-border-radius: 5px;
-@button-color: @primary;
-@button-color-light: @primary-light-40;
-@button-color-dark: @primary-dark-40;
+@button-bg-color: desaturate(@primary, 10%);
+@button-bg-color-light: lighten(@button-bg-color, 20%);
+@button-bg-color-dark: darken(@button-bg-color, 20%);
+@button-text-color-dark: darken(white, 5%);
+@button-text-color-light: lighten(black, 10%);

@@ -8,16 +8,16 @@ div {
 }
 
 .primary {
-    background-color: @button-color;
-    color: white;
+    background-color: @button-bg-color;
+    color: if(luma(@button-bg-color) > 50%, @button-text-color-light, @button-text-color-dark);
 }
 
 .primary-light {
-    background-color: @button-color-light;
-    color: white;
+    background-color: @button-bg-color-light;
+    color: if(luma(@button-bg-color-light) > 50%, @button-text-color-light, @button-text-color-dark);
 }
 
 .primary-dark {
-    background-color: @button-color-dark;
-    color: white;
+    background-color: @button-bg-color-dark;
+    color: if(luma(@button-bg-color-dark) > 50%, @button-text-color-light, @button-text-color-dark);
 }
