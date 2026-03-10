@@ -1,0 +1,5 @@
+<div class="nav-bar">
+    @for(tab of tabs(); track tab.label) {
+        <kk-button (click)="navigateTo(tab.route)">{{tab.label}}</kk-button>
+    }
+</div>
